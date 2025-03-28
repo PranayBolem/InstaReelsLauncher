@@ -1,0 +1,147 @@
+:root {
+    --instagram-blue: #0095f6;
+    --instagram-red: #ed4956;
+    --instagram-yellow: #fae45d;
+    --instagram-purple: #d62976;
+    --instagram-orange: #f77737;
+    --instagram-black: #262626;
+    --instagram-gray: #8e8e8e;
+    --instagram-light-gray: #dbdbdb;
+    --instagram-background: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--instagram-black);
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.launcher-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#reels-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--instagram-black);
+}
+
+#reels-background iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.app-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.app-shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.app-shortcut:active {
+    transform: scale(0.95);
+}
+
+.app-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.app-name {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.launcher-controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.control-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.control-button.active {
+    opacity: 1;
+}
+
+.control-button:active {
+    opacity: 0.5;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+/* Loading state */
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Error state */
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(237, 73, 86, 0.9);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+} 

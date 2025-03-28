@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/launcher.css">
+        <title>Instagram Reels Launcher</title>
+    </head>
+    <body>
+        <div class="launcher-container">
+            <div id="reels-background"></div>
+            <div class="app-grid">
+                <!-- App shortcuts will be dynamically added here -->
+            </div>
+            <div class="launcher-controls">
+                <button id="homeButton" class="control-button">
+                    <span class="material-icons">home</span>
+                </button>
+                <button id="reelsButton" class="control-button active">
+                    <span class="material-icons">video_library</span>
+                </button>
+                <button id="searchButton" class="control-button">
+                    <span class="material-icons">search</span>
+                </button>
+                <button id="profileButton" class="control-button">
+                    <span class="material-icons">person</span>
+                </button>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/launcher.js"></script>
+    </body>
+</html> 

@@ -54,9 +54,8 @@ function onDeviceReady() {
             // Store the credentials securely
             await storeCredentials(username, password);
             
-            // Redirect to the main app interface
-            // This will be implemented later
-            console.log('Login successful');
+            // Redirect to the launcher page
+            window.location.href = 'launcher.html';
             
         } catch (error) {
             showError(error.message || 'Login failed. Please try again.');
@@ -96,9 +95,9 @@ function simulateLogin(username, password) {
 // Store credentials securely
 async function storeCredentials(username, password) {
     try {
-        // We'll use the Cordova Storage plugin to store credentials securely
-        // This will be implemented later
-        console.log('Storing credentials...');
+        // Store credentials in localStorage (in a real app, use more secure storage)
+        const credentials = { username, password };
+        await window.localStorage.setItem('instagram_credentials', JSON.stringify(credentials));
     } catch (error) {
         console.error('Error storing credentials:', error);
         throw new Error('Failed to store credentials');
