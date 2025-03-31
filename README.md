@@ -46,6 +46,12 @@ You can log-in to your instagram in the launcher and it will play your instagram
 
 ---
 
+## Demo Images
+![Image](https://github.com/user-attachments/assets/82cb6d9d-319b-4289-b22d-97e40555697a)
+
+![Image](https://github.com/user-attachments/assets/b9ebb63d-8ca7-47f8-9a5c-26e48c631cbf)
+
+
 Your phone. Rewired for chaos. Don't use it responsibly.
 
 More Brain Rot Projects coming soon.
