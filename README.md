@@ -48,5 +48,4 @@ You can log-in to your instagram in the launcher and it will play your instagram
 
 Your phone. Rewired for chaos. Don't use it responsibly.
 
-Project Made by 
 More Brain Rot Projects coming soon.
